@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /* .cn{
+        display : table-cell;
+        vertical-align: middle;
+        text-align: center;
+        background-color: aqua;
+        width:500px;
+        height:500px;
+    }
+    .inner{
+        display: inline-block;
+        width:200px;
+        height:200px;
+        background-color: red;
+        text-align: center;
+    }
+    span{
+        /* display: inline-block; */
+        /* vertical-align: middle; */
+        /* line-height: 200px; */
+    /* }  */
+    /* */
+    /* .cn{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    } */
+     .cn{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+     }
+     .inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+     }
+</style>
+<body>
+    <p>Click "try it" button to get your coordinates.</p>
+    <button onclick="getLocation()">Try It</button>
+    <p id="demo"> </p>
+    <div class="cn"><div class="inner"> <span>your content</span></div> </div>
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation functionality is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+
+</html>

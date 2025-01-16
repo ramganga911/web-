@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width: device-width, initial-scale = 1.0" >
+    <title>Index1</title>
+</head>
+<body>
+    <button onclick="create()">
+        Click Me!
+    </button>
+    <a href = "index2.html">Go to page 3</a>
+    <script>
+        function create(){
+            let geeks = document.createElement('geeks');
+            geeks.textContent= "Ram";
+            geeks.setAttribute('class', 'note');
+            document.body.appendChild(geeks);
+        }
+    </script>
+</body>
+</html>

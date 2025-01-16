@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web dev</title>
+    <script src="script.js"></script>
+    <style>
+        h1 {
+            margin: 50px;
+            border: 70px solid green;
+            padding: 80px;
+            background-color: linear-gradient(to right, red, yellow);
+        }
+        p {
+            outline: 5px solid #ddd;
+            border: 1px solid #000;
+        }
+        #id{
+            animation-name: color; 
+            animation-duration: 25s; 
+            padding-top:30px; 
+            padding-bottom:30px; 
+            font-family:"Times";
+        }
+        @keyframes color { 
+                0% { 
+                    background-color: red; 
+                } 
+                50% { 
+                    background-color: orange; 
+                } 
+                100% { 
+                    background-color: brown; 
+                } 
+            } 
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: yellow;
+        }
+        .visible {
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+        .visible {
+            visibility: visible;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    </style><style>
+        #gfg {
+            animation-name: color;
+            animation-duration: 25s;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-family: Times New Roman;
+        }
+    
+        #geeks {
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #090;
+            padding-bottom: 5px;
+        }
+    
+        #geeks1 {
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        @keyframes color {
+            0% {
+                background-color: red;
+            }
+    
+            50% {
+                background-color: orange;
+            }
+    
+            100% {
+                background-color: brown;
+            }
+        }
+        @media screen and (max-width:500pc){
+            body{
+                background-color: lightblue;
+            }
+        }
+        @media screen and (max-width:800px){
+            body{
+                background-color: rgb(202, 202, 208);
+            }
+        }
+    </style>
+
+    
+
+
+</head>
+
+<body>
+    <h1>
+        External Javascript
+    </h1>
+    <h3 id="demo" style="color:green">Ramganga Kumar</h3>
+    <button type="button" onclick="myFun()">Click Here</button>
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" style="border:2px solid black" name="iframe_a"
+        title="Iframe"></iframe>
+    <p><a href="https://en.wikipedia.org/wiki/Main_Page" target="iframe_a">Google</a></p>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+    <form>
+        <input type="text" name="username" id="username">
+        <input type="radio" id="m" name="gender" value="Male">
+        <input type="radio" id="f" name="gender" value="Female">
+        <input type="'date" id="bday" name="ram">
+        <input type="email" id="email" name="email">
+        <input type="file" id="myfile" name="myfile">
+        <input type="range" id="val" name="val" min="0" max="20" step="2">
+        <input type="search" id="search" name="search">
+        
+    </form>
+    <div id="demo1" style="color:blue"></div>
+    <p id="id1">This is a paragraph.</p>
+    <h1>GEEKSFORGEEKS</h1>
+    <h2>
+        Padding properties
+    </h2>
+    <h1 class="visible">visible heading</h1>
+    <h1 class="hidden">hidden heading</h1>
+    <p>
+        Note: The h1 element with display: none;
+        does not take up any space.
+    </p>
+    <h2 class="visible">This heading is visible</h2>
+    <h2 class="hidden">This heading is hidden</h2>
+    <p>Note: The hidden heading takes up space.</p>
+    <a href="index2.html">page2</a>
+    
+    <div id="gfg">
+        <div id="geeks">GeeksforGeeks</div>
+        <div id="geeks1">
+            A computer science portal for geeks
+        </div>
+    </div>
+
+</body>
+
+</html>
