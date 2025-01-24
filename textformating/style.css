@@ -1,0 +1,17 @@
+h1{
+    font-size: 20px;
+    color: rgb(24, 2, 2);
+    align-items: center;
+    word-spacing: 10px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px rgb(0, 0, 6);
+}
+h2{
+    font-size: 15px;
+    color: rgb(21, 19, 19);
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(0, 0, 6);
+    
+}

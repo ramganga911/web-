@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid greenyellow;
+    height: 400px;
+    display: grid;
+    row-gap:10px;
+    column-gap: 10px;
+    grid-template-columns: 200px 200px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.box{
+    border:2px solid red;
+    padding: 10px;
+}

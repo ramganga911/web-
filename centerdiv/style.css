@@ -1,0 +1,28 @@
+/* .container {
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inside {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+
+} */
+
+main{
+    border:5px solid black;
+    width:50%;
+}
+section{
+    border:5px dashed red;
+    width:50%;
+}

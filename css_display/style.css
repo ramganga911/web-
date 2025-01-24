@@ -1,0 +1,27 @@
+.container{
+    height: 200px;
+    width: 200px;
+    padding: 10px 20px 30px 40px;
+    background-color: rgb(237, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border: 5px solid rgb(21, 182, 45);
+    box-sizing: border-box;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+h1,p{
+    font-size: 10px;
+    color: white;
+    align-items: center;
+    border: 5px solid black;
+    
+}
