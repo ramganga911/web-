@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html, body{
+    height:100%;
+    width:100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #130d0d;
+}
+#card{
+    height :400px;
+    width: 300px;
+    padding:20px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+}
+#card h1{
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 800;
+    color: #4ef507;
+}
+#card h5{
+    font-size: 25px;
+    margin: 10px 0;
+    color:red;
+}
+#card img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px;
+}
+#card button{
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: cadetblue;
+    color: #fbfbfb;
+    font-size: 20px;
+    cursor: pointer;
+}
+#card i{
+    font-size: 40px;
+    color: #ee0c0c;
+    cursor: pointer;
+    margin:10px;
+    position :absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.3s;
+}
+/* .cursor{
+    height:20px;
+    width:20px;
+    background-color: #ffffff;
+    color:#fbfbfb;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+} */
