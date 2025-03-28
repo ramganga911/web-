@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack copy-paste</title>
+</head>
+
+<body>
+    <h1>Copy karke paste karna isko</h1>
+    <script>
+        document.addEventListener('copy', function (event) {
+            event.clipboardData.setData('text/plain', '🖕');
+            event.preventDefault();
+        });
+
+        function generateOTP(length){
+            let otp='';
+            for(let i=0; i<length; i++){
+                otp+=Math.floor(Math.random()*10);
+            }
+            console.log(otp);
+        }
+        generateOTP(6);
+        Promise.resolve().then(()=> console.log(1));
+        setTimeout(()=> console.log(2),10);
+        queueMicrotask(()=> {
+            console.log(3)
+            queueMicrotask(()=> console.log(4))
+        });
+        console.log(5);
+    </script>
+</body>
+
+</html>
